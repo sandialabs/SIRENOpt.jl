@@ -1,0 +1,20 @@
+block,model_path,package,adapter,valid_range,assumptions,fallback_policy
+solar_resource,prescribed,nothing,ShortHorizonScenario.solar_irradiance_kw_per_m2,,externally prescribed scenario data,
+solar_array,surrogate,nothing,linear_solar_array,,power_kw = irradiance_kw_per_m2 * area_m2 * efficiency,replace with PVlib adapter when package-backed weather is active
+solar_converter,surrogate,nothing,constant_efficiency_converter,,positive power supplies downstream bus; negative power consumes from bus,
+battery,surrogate,nothing,coulombic_battery_inventory,,positive command discharges to the bus; dt_s converted once to hours,
+battery_converter,surrogate,nothing,constant_efficiency_converter,,positive power supplies downstream bus; negative power consumes from bus,
+load,prescribed,nothing,ShortHorizonScenario.load_kw,,externally prescribed scenario data,
+bus,hard_residual,nothing,signed_bus_power_balance,,explicit SIRENOpt residual equation,
+wind_resource,prescribed,nothing,ShortHorizonScenario.wind_speed_m_s,,externally prescribed scenario data,
+wind_rotor,package_backed,UnsteadyKineticRotorDynamics,simple_ccblade_rotor_model,,wind speed in m/s; positive shaft power leaves rotor; ForwardDiff sensitivity through dual-valued motion uses SIRENOpt smooth actuator-disk envelope because the current package state is Float64-typed,replace with a higher-fidelity wind adapter when rotor states and dual-valued motion are exposed
+wind_generator,package_backed,GeneratorSE,generatorse_output_kw,,shaft power enters generator; positive electrical power leaves generator,constant-efficiency generator if GeneratorSE construction is unavailable
+wind_converter,package_backed,PowerConverterDynamics,powerconverter_output_kw,,signed kW converter boundary; positive power injects into the bus,constant-efficiency converter if package model is unavailable
+wave_resource,prescribed,nothing,ShortHorizonScenario.wave_power_flux_kw_per_m,,externally prescribed scenario data,
+wave_wec,surrogate,nothing,linear_wave_capture_surrogate,,power_kw = wave_power_flux_kw_per_m * capture_width_m,replace with WEC/PTO package adapter when validated residuals are available
+wave_converter,surrogate,nothing,constant_efficiency_wave_converter,,positive wave device power injects through converter,
+hydrokinetic_resource,prescribed,nothing,ShortHorizonScenario.hydrokinetic_current_m_s,,externally prescribed scenario data,
+hydrokinetic_rotor,package_backed,UnsteadyKineticRotorDynamics,simple_ccblade_rotor_model,,current speed in m/s; fluid density in kg/m^3; positive shaft power leaves hydrokinetic rotor; ForwardDiff sensitivity through dual-valued resource inputs uses SIRENOpt smooth actuator-disk envelope because the current package state is Float64-typed,replace with a higher-fidelity hydrokinetic adapter when rotor states and dual-valued resource inputs are exposed
+hydrokinetic_generator,package_backed,GeneratorSE,generatorse_output_kw,,shaft power enters generator; positive electrical power leaves generator,constant-efficiency generator if GeneratorSE construction is unavailable
+hydrokinetic_converter,package_backed,PowerConverterDynamics,powerconverter_output_kw,,signed kW converter boundary; positive power injects into the bus,constant-efficiency converter if package model is unavailable
+platform,surrogate,nothing,pendulum_platform_fallback,,single pitch DOF; wind moment drives platform pitch,replace with validated Hydrodynamics/Mooring force residuals when available

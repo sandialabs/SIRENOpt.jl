@@ -1,0 +1,80 @@
+index,owner,name,sense,unit,scale,lower,upper,time_index,scope,model_path,label
+1,solar_array,solar_available_limit,geq,kW,1.0,0.0,Inf,1,interval,surrogate,Solar available power cap
+2,solar_array,solar_available_limit,geq,kW,1.0,0.0,Inf,2,interval,surrogate,Solar available power cap
+3,solar_array,solar_available_limit,geq,kW,1.0,0.0,Inf,3,interval,surrogate,Solar available power cap
+4,solar_converter,solar_converter_loss_relation,eq,kW,1.0,0.0,0.0,1,interval,surrogate,Solar converter loss relation
+5,solar_converter,solar_converter_loss_relation,eq,kW,1.0,0.0,0.0,2,interval,surrogate,Solar converter loss relation
+6,solar_converter,solar_converter_loss_relation,eq,kW,1.0,0.0,0.0,3,interval,surrogate,Solar converter loss relation
+7,solar_converter,solar_converter_rating_limit,geq,kW,1.0,0.0,Inf,1,interval,surrogate,Solar converter rating margin
+8,solar_converter,solar_converter_rating_limit,geq,kW,1.0,0.0,Inf,2,interval,surrogate,Solar converter rating margin
+9,solar_converter,solar_converter_rating_limit,geq,kW,1.0,0.0,Inf,3,interval,surrogate,Solar converter rating margin
+10,battery,battery_inventory,eq,kWh,5.0,0.0,0.0,1,interval,surrogate,Battery SOC inventory
+11,battery,battery_inventory,eq,kWh,5.0,0.0,0.0,2,interval,surrogate,Battery SOC inventory
+12,battery,battery_inventory,eq,kWh,5.0,0.0,0.0,3,interval,surrogate,Battery SOC inventory
+13,battery,battery_power_limit,geq,kW,3.0,0.0,Inf,1,interval,surrogate,Battery power margin
+14,battery,battery_power_limit,geq,kW,3.0,0.0,Inf,2,interval,surrogate,Battery power margin
+15,battery,battery_power_limit,geq,kW,3.0,0.0,Inf,3,interval,surrogate,Battery power margin
+16,battery_converter,battery_converter_loss_relation,eq,kW,1.0,0.0,0.0,1,interval,surrogate,Battery converter loss relation
+17,battery_converter,battery_converter_loss_relation,eq,kW,1.0,0.0,0.0,2,interval,surrogate,Battery converter loss relation
+18,battery_converter,battery_converter_loss_relation,eq,kW,1.0,0.0,0.0,3,interval,surrogate,Battery converter loss relation
+19,battery_converter,battery_converter_rating_limit,geq,kW,3.0,0.0,Inf,1,interval,surrogate,Battery converter rating margin
+20,battery_converter,battery_converter_rating_limit,geq,kW,3.0,0.0,Inf,2,interval,surrogate,Battery converter rating margin
+21,battery_converter,battery_converter_rating_limit,geq,kW,3.0,0.0,Inf,3,interval,surrogate,Battery converter rating margin
+22,load,load_served_bounds,interval,fraction,1.0,1.0,1.0,1,interval,prescribed,Load served fraction bounds
+23,load,load_served_bounds,interval,fraction,1.0,1.0,1.0,2,interval,prescribed,Load served fraction bounds
+24,load,load_served_bounds,interval,fraction,1.0,1.0,1.0,3,interval,prescribed,Load served fraction bounds
+25,load,load_converter_rating_limit,geq,kW,10.0,0.0,Inf,1,interval,prescribed,Load converter rating margin
+26,load,load_converter_rating_limit,geq,kW,10.0,0.0,Inf,2,interval,prescribed,Load converter rating margin
+27,load,load_converter_rating_limit,geq,kW,10.0,0.0,Inf,3,interval,prescribed,Load converter rating margin
+28,bus,bus_power_balance,eq,kW,1.0,0.0,0.0,1,interval,hard_residual,Bus power balance
+29,bus,bus_power_balance,eq,kW,1.0,0.0,0.0,2,interval,hard_residual,Bus power balance
+30,bus,bus_power_balance,eq,kW,1.0,0.0,0.0,3,interval,hard_residual,Bus power balance
+31,wind_rotor,wind_available_limit,geq,kW,4.0,0.0,Inf,1,interval,package_backed,Wind available power cap
+32,wind_rotor,wind_available_limit,geq,kW,4.0,0.0,Inf,2,interval,package_backed,Wind available power cap
+33,wind_rotor,wind_available_limit,geq,kW,4.0,0.0,Inf,3,interval,package_backed,Wind available power cap
+34,wind_rotor,wind_rating_limit,geq,kW,4.0,0.0,Inf,1,interval,package_backed,Wind rated power margin
+35,wind_rotor,wind_rating_limit,geq,kW,4.0,0.0,Inf,2,interval,package_backed,Wind rated power margin
+36,wind_rotor,wind_rating_limit,geq,kW,4.0,0.0,Inf,3,interval,package_backed,Wind rated power margin
+37,wind_generator,wind_generator_loss_relation,eq,kW,1.0,0.0,0.0,1,interval,package_backed,Wind generator loss relation
+38,wind_generator,wind_generator_loss_relation,eq,kW,1.0,0.0,0.0,2,interval,package_backed,Wind generator loss relation
+39,wind_generator,wind_generator_loss_relation,eq,kW,1.0,0.0,0.0,3,interval,package_backed,Wind generator loss relation
+40,wind_converter,wind_converter_loss_relation,eq,kW,1.0,0.0,0.0,1,interval,package_backed,Wind converter loss relation
+41,wind_converter,wind_converter_loss_relation,eq,kW,1.0,0.0,0.0,2,interval,package_backed,Wind converter loss relation
+42,wind_converter,wind_converter_loss_relation,eq,kW,1.0,0.0,0.0,3,interval,package_backed,Wind converter loss relation
+43,wind_converter,wind_converter_rating_limit,geq,kW,4.0,0.0,Inf,1,interval,package_backed,Wind converter rating margin
+44,wind_converter,wind_converter_rating_limit,geq,kW,4.0,0.0,Inf,2,interval,package_backed,Wind converter rating margin
+45,wind_converter,wind_converter_rating_limit,geq,kW,4.0,0.0,Inf,3,interval,package_backed,Wind converter rating margin
+46,wave_wec,wave_available_limit,geq,kW,2.0,0.0,Inf,1,interval,surrogate,Wave available power cap
+47,wave_wec,wave_available_limit,geq,kW,2.0,0.0,Inf,2,interval,surrogate,Wave available power cap
+48,wave_wec,wave_available_limit,geq,kW,2.0,0.0,Inf,3,interval,surrogate,Wave available power cap
+49,wave_wec,wave_rating_limit,geq,kW,2.0,0.0,Inf,1,interval,surrogate,Wave rated power margin
+50,wave_wec,wave_rating_limit,geq,kW,2.0,0.0,Inf,2,interval,surrogate,Wave rated power margin
+51,wave_wec,wave_rating_limit,geq,kW,2.0,0.0,Inf,3,interval,surrogate,Wave rated power margin
+52,wave_wec,wave_pto_limit,geq,kW,2.0,0.0,Inf,1,interval,surrogate,WEC PTO power margin
+53,wave_wec,wave_pto_limit,geq,kW,2.0,0.0,Inf,2,interval,surrogate,WEC PTO power margin
+54,wave_wec,wave_pto_limit,geq,kW,2.0,0.0,Inf,3,interval,surrogate,WEC PTO power margin
+55,wave_converter,wave_converter_loss_relation,eq,kW,1.0,0.0,0.0,1,interval,surrogate,Wave converter loss relation
+56,wave_converter,wave_converter_loss_relation,eq,kW,1.0,0.0,0.0,2,interval,surrogate,Wave converter loss relation
+57,wave_converter,wave_converter_loss_relation,eq,kW,1.0,0.0,0.0,3,interval,surrogate,Wave converter loss relation
+58,hydrokinetic_rotor,hydrokinetic_available_limit,geq,kW,3.0,0.0,Inf,1,interval,package_backed,Hydrokinetic available power cap
+59,hydrokinetic_rotor,hydrokinetic_available_limit,geq,kW,3.0,0.0,Inf,2,interval,package_backed,Hydrokinetic available power cap
+60,hydrokinetic_rotor,hydrokinetic_available_limit,geq,kW,3.0,0.0,Inf,3,interval,package_backed,Hydrokinetic available power cap
+61,hydrokinetic_rotor,hydrokinetic_rating_limit,geq,kW,3.0,0.0,Inf,1,interval,package_backed,Hydrokinetic rated power margin
+62,hydrokinetic_rotor,hydrokinetic_rating_limit,geq,kW,3.0,0.0,Inf,2,interval,package_backed,Hydrokinetic rated power margin
+63,hydrokinetic_rotor,hydrokinetic_rating_limit,geq,kW,3.0,0.0,Inf,3,interval,package_backed,Hydrokinetic rated power margin
+64,hydrokinetic_generator,hydrokinetic_generator_loss_relation,eq,kW,1.0,0.0,0.0,1,interval,package_backed,Hydrokinetic generator loss relation
+65,hydrokinetic_generator,hydrokinetic_generator_loss_relation,eq,kW,1.0,0.0,0.0,2,interval,package_backed,Hydrokinetic generator loss relation
+66,hydrokinetic_generator,hydrokinetic_generator_loss_relation,eq,kW,1.0,0.0,0.0,3,interval,package_backed,Hydrokinetic generator loss relation
+67,hydrokinetic_converter,hydrokinetic_converter_loss_relation,eq,kW,1.0,0.0,0.0,1,interval,package_backed,Hydrokinetic converter loss relation
+68,hydrokinetic_converter,hydrokinetic_converter_loss_relation,eq,kW,1.0,0.0,0.0,2,interval,package_backed,Hydrokinetic converter loss relation
+69,hydrokinetic_converter,hydrokinetic_converter_loss_relation,eq,kW,1.0,0.0,0.0,3,interval,package_backed,Hydrokinetic converter loss relation
+70,hydrokinetic_converter,hydrokinetic_converter_rating_limit,geq,kW,3.0,0.0,Inf,1,interval,package_backed,Hydrokinetic converter rating margin
+71,hydrokinetic_converter,hydrokinetic_converter_rating_limit,geq,kW,3.0,0.0,Inf,2,interval,package_backed,Hydrokinetic converter rating margin
+72,hydrokinetic_converter,hydrokinetic_converter_rating_limit,geq,kW,3.0,0.0,Inf,3,interval,package_backed,Hydrokinetic converter rating margin
+73,platform,platform_kinematic_defect,eq,rad,1.0,0.0,0.0,1,interval,surrogate,Platform pitch kinematic defect
+74,platform,platform_kinematic_defect,eq,rad,1.0,0.0,0.0,2,interval,surrogate,Platform pitch kinematic defect
+75,platform,platform_kinematic_defect,eq,rad,1.0,0.0,0.0,3,interval,surrogate,Platform pitch kinematic defect
+76,platform,platform_dynamic_defect,eq,rad/s,1.0,0.0,0.0,1,interval,surrogate,Platform pitch dynamic defect
+77,platform,platform_dynamic_defect,eq,rad/s,1.0,0.0,0.0,2,interval,surrogate,Platform pitch dynamic defect
+78,platform,platform_dynamic_defect,eq,rad/s,1.0,0.0,0.0,3,interval,surrogate,Platform pitch dynamic defect
+79,battery,battery_terminal_soc,eq,kWh,1.0,0.0,0.0,nothing,terminal,surrogate,Battery terminal SOC equals initial SOC

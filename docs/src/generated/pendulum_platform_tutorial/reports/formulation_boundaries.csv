@@ -1,0 +1,2 @@
+formulation,variant,boundary,exposed_roles,replayed_roles,state_policy,segment_s,residual_check,sensitivity_check,retained_implicit_boundary,notes
+collocation,trapezoidal,direct_transcription,design; state; control,,exposed,,registered_constraints,ForwardDiff_or_finite_difference_on_constraints,,State and control variables are NLP variables; dynamic defects are registered residuals.

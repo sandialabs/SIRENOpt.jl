@@ -1,0 +1,11 @@
+plot_group,unit,file,columns,labels,source
+dynamics,N*m,plot_dynamics_n_m.svg,wind_platform_moment_nm; platform_pitch_moment_nm,Wind platform pitch moment; Platform pitch moment,OutputSpec.plot_group
+losses,kW,plot_losses_kw.svg,solar_converter_loss_kw; battery_converter_loss_kw; hydrokinetic_converter_loss_kw,Solar converter loss; Battery converter loss; Hydrokinetic converter loss,OutputSpec.plot_group
+platform_motion,rad,plot_platform_motion_rad.svg,platform_theta_rad,Platform pitch angle,OutputSpec.plot_group
+platform_motion,rad/s,plot_platform_motion_rad_s.svg,platform_omega_rad_s,Platform pitch rate,OutputSpec.plot_group
+power,kW,plot_power_kw.svg,solar_device_power_kw; solar_bus_power_kw; battery_device_power_kw; battery_bus_power_kw; load_bus_power_kw; wind_shaft_power_kw; wind_device_power_kw; wind_bus_power_kw; wave_device_power_kw; wave_bus_power_kw; hydrokinetic_shaft_power_kw; hydrokinetic_device_power_kw; hydrokinetic_bus_power_kw,Solar device power; Solar bus power; Battery device power; Battery bus power; Load bus power; Wind shaft power; Wind generator electrical power; Wind bus power; Wave device power; Wave bus power; Hydrokinetic shaft power; Hydrokinetic generator electrical power; Hydrokinetic bus power,OutputSpec.plot_group
+residuals,kW,plot_residuals_kw.svg,bus_balance_residual_kw,Bus balance residual,OutputSpec.plot_group
+resources,kW/m,plot_resources_kw_m.svg,wave_power_flux_kw_per_m,Wave power flux,OutputSpec.plot_group
+resources,kW/m^2,plot_resources_kw_m_2.svg,solar_irradiance_kw_per_m2,Solar irradiance,OutputSpec.plot_group
+resources,m/s,plot_resources_m_s.svg,wind_speed_m_s; hydrokinetic_current_m_s,Wind speed; Hydrokinetic current speed,OutputSpec.plot_group
+storage,fraction,plot_storage_fraction.svg,battery_soc,Battery SOC,OutputSpec.plot_group

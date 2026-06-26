@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="286" viewBox="0 0 880 286">
+  <style>
+    .title { font: 700 20px sans-serif; fill: #1f2937; }
+    .subtitle { font: 600 14px sans-serif; fill: #334155; }
+    .body { font: 13px sans-serif; fill: #334155; }
+    .small { font: 12px sans-serif; fill: #475569; }
+    .box { fill: #f8fafc; stroke: #94a3b8; stroke-width: 1.5; rx: 8; }
+    .pkg { fill: #eff6ff; stroke: #3b82f6; stroke-width: 2; rx: 8; }
+    .siren { fill: #ecfeff; stroke: #0891b2; stroke-width: 2; rx: 8; }
+    .arrow { stroke: #475569; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+    .note { fill: #fff7ed; stroke: #f59e0b; stroke-width: 1.5; rx: 8; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+  </defs>
+  <text x="28" y="32" class="title">Battery Storage Boundary: AgnosticStorageDynamics</text>
+  <rect x="28" y="58" width="238" height="158" class="box"/>
+  <text x="46" y="84" class="subtitle">SIRENOpt inputs</text>
+  <text x="46" y="110" class="body">BatteryDesign:</text>
+  <text x="62" y="130" class="small">capacity, power limits, efficiencies, reserve SOC</text>
+  <text x="46" y="154" class="body">state of charge</text>
+  <text x="46" y="176" class="body">signed power command [kW], dt [h]</text>
+
+  <rect x="320" y="58" width="250" height="158" class="pkg"/>
+  <text x="346" y="84" class="subtitle">AgnosticStorageDynamics calculations</text>
+  <text x="346" y="110" class="body">StorageParams(...)</text>
+  <text x="346" y="132" class="body">simulate_storage(...)</text>
+  <text x="346" y="154" class="small">SI units internally: J and W</text>
+
+  <rect x="624" y="58" width="228" height="158" class="siren"/>
+  <text x="650" y="84" class="subtitle">SIRENOpt outputs</text>
+  <text x="650" y="110" class="body">generic_storage_params(...)</text>
+  <text x="650" y="132" class="body">generic_storage_step(...)</text>
+  <text x="650" y="154" class="small">new SOC, realized battery power [kW]</text>
+  <text x="650" y="176" class="small">sign convention preserved at ontology level</text>
+
+  <path d="M266 137 L320 137" class="arrow"/>
+  <path d="M570 137 L624 137" class="arrow"/>
+
+  <rect x="28" y="232" width="824" height="34" class="note"/>
+  <text x="44" y="254" class="small">The package provides generic energy bookkeeping. SIRENOpt owns the higher-level battery semantics such as reserve policy, bus coupling, and optimization variables.</text>
+</svg>

@@ -1,0 +1,41 @@
+index,owner,name,role,unit,scale,lower,upper,initial,time_index,scope,model_path,label
+1,solar_array,solar_area_m2,design,m^2,10.0,0.0,Inf,10.0,nothing,design,surrogate,Solar array area
+2,solar_array,solar_curtailment,control,fraction,1.0,0.0,1.0,0.0,1,interval,surrogate,Solar curtailment
+3,solar_array,solar_curtailment,control,fraction,1.0,0.0,1.0,0.0,2,interval,surrogate,Solar curtailment
+4,solar_array,solar_curtailment,control,fraction,1.0,0.0,1.0,0.0,3,interval,surrogate,Solar curtailment
+5,solar_converter,solar_converter_rating_kw,design,kW,10.0,0.0,Inf,10.0,nothing,design,surrogate,Solar converter rating
+6,battery,battery_capacity_kwh,design,kWh,5.0,2.220446049250313e-16,Inf,5.0,nothing,design,surrogate,Battery capacity
+7,battery,battery_power_kw,design,kW,3.0,2.220446049250313e-16,Inf,3.0,nothing,design,surrogate,Battery power rating
+8,battery,battery_soc,state,fraction,1.0,0.0,1.0,0.7,1,node,surrogate,Battery state of charge
+9,battery,battery_soc,state,fraction,1.0,0.0,1.0,0.7,2,node,surrogate,Battery state of charge
+10,battery,battery_soc,state,fraction,1.0,0.0,1.0,0.7,3,node,surrogate,Battery state of charge
+11,battery,battery_soc,state,fraction,1.0,0.0,1.0,0.7,4,node,surrogate,Battery state of charge
+12,battery,battery_command_kw,control,kW,3.0,-3.0,3.0,0.0,1,interval,surrogate,Battery command
+13,battery,battery_command_kw,control,kW,3.0,-3.0,3.0,0.0,2,interval,surrogate,Battery command
+14,battery,battery_command_kw,control,kW,3.0,-3.0,3.0,0.0,3,interval,surrogate,Battery command
+15,load,load_converter_rating_kw,design,kW,10.0,0.0,Inf,10.0,nothing,design,prescribed,Load converter rating
+16,load,load_served_fraction,control,fraction,1.0,1.0,1.0,1.0,1,interval,prescribed,Load served fraction
+17,load,load_served_fraction,control,fraction,1.0,1.0,1.0,1.0,2,interval,prescribed,Load served fraction
+18,load,load_served_fraction,control,fraction,1.0,1.0,1.0,1.0,3,interval,prescribed,Load served fraction
+19,wind_rotor,wind_rated_power_kw,design,kW,4.0,0.0,Inf,4.0,nothing,design,package_backed,Wind rated power
+20,wind_rotor,wind_curtailment,control,fraction,1.0,0.0,1.0,0.0,1,interval,package_backed,Wind curtailment
+21,wind_rotor,wind_curtailment,control,fraction,1.0,0.0,1.0,0.0,2,interval,package_backed,Wind curtailment
+22,wind_rotor,wind_curtailment,control,fraction,1.0,0.0,1.0,0.0,3,interval,package_backed,Wind curtailment
+23,wave_wec,wave_capture_width_m,design,m,2.0,0.0,Inf,2.0,nothing,design,surrogate,Wave capture width
+24,wave_wec,wave_rated_power_kw,design,kW,2.0,0.0,Inf,2.0,nothing,design,surrogate,Wave rated power
+25,wave_wec,wave_curtailment,control,fraction,1.0,0.0,1.0,0.0,1,interval,surrogate,Wave curtailment
+26,wave_wec,wave_curtailment,control,fraction,1.0,0.0,1.0,0.0,2,interval,surrogate,Wave curtailment
+27,wave_wec,wave_curtailment,control,fraction,1.0,0.0,1.0,0.0,3,interval,surrogate,Wave curtailment
+28,hydrokinetic_rotor,hydrokinetic_rated_power_kw,design,kW,3.0,0.0,Inf,3.0,nothing,design,package_backed,Hydrokinetic rated power
+29,hydrokinetic_rotor,hydrokinetic_curtailment,control,fraction,1.0,0.0,1.0,0.0,1,interval,package_backed,Hydrokinetic curtailment
+30,hydrokinetic_rotor,hydrokinetic_curtailment,control,fraction,1.0,0.0,1.0,0.0,2,interval,package_backed,Hydrokinetic curtailment
+31,hydrokinetic_rotor,hydrokinetic_curtailment,control,fraction,1.0,0.0,1.0,0.0,3,interval,package_backed,Hydrokinetic curtailment
+32,platform,platform_inertia_kg_m2,design,kg*m^2,99999.99999999999,2.220446049250313e-16,Inf,99999.99999999999,nothing,design,surrogate,Platform pitch inertia
+33,platform,platform_theta_rad,state,rad,1.0,-Inf,Inf,0.0,1,node,surrogate,Platform pitch angle
+34,platform,platform_theta_rad,state,rad,1.0,-Inf,Inf,0.0,2,node,surrogate,Platform pitch angle
+35,platform,platform_theta_rad,state,rad,1.0,-Inf,Inf,0.0,3,node,surrogate,Platform pitch angle
+36,platform,platform_theta_rad,state,rad,1.0,-Inf,Inf,0.0,4,node,surrogate,Platform pitch angle
+37,platform,platform_omega_rad_s,state,rad/s,1.0,-Inf,Inf,0.0,1,node,surrogate,Platform pitch rate
+38,platform,platform_omega_rad_s,state,rad/s,1.0,-Inf,Inf,0.0,2,node,surrogate,Platform pitch rate
+39,platform,platform_omega_rad_s,state,rad/s,1.0,-Inf,Inf,0.0,3,node,surrogate,Platform pitch rate
+40,platform,platform_omega_rad_s,state,rad/s,1.0,-Inf,Inf,0.0,4,node,surrogate,Platform pitch rate

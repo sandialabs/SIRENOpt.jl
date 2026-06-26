@@ -1,0 +1,41 @@
+owner,name,port_type,direction,quantity,unit,sign_convention,frame,reference_point,time_grid,cardinality
+solar_resource,resource_state,resource_state,out,irradiance,kW/m^2,positive irradiance increases available solar power,nothing,nothing,main,one
+solar_array,resource_state,resource_state,in,irradiance,kW/m^2,positive irradiance increases available solar power,nothing,nothing,main,one
+solar_array,control_signal,control_signal,in,curtailment,fraction,positive curtailment reduces available solar power,nothing,nothing,main,one
+solar_array,device_electrical,device_electrical,out,power,kW,positive device power leaves the solar array,nothing,nothing,main,one
+solar_converter,device_electrical,device_electrical,in,power,kW,positive power enters converter from solar array,nothing,nothing,main,one
+solar_converter,bus_electrical,bus_electrical,out,power,kW,positive power injects into bus,nothing,nothing,main,one
+battery,storage_state,storage_state,out,inventory,fraction,larger SOC stores more energy,nothing,nothing,main,one
+battery,device_electrical,device_electrical,inout,power,kW,positive device power discharges from battery,nothing,nothing,main,one
+battery,control_signal,control_signal,in,power_command,kW,positive command discharges to the bus,nothing,nothing,main,one
+battery_converter,device_electrical,device_electrical,inout,power,kW,positive power enters converter from battery,nothing,nothing,main,one
+battery_converter,bus_electrical,bus_electrical,inout,power,kW,positive power injects into bus,nothing,nothing,main,one
+load,demand_profile,demand_profile,in,power_demand,kW,positive demand consumes bus power,nothing,nothing,main,one
+load,bus_electrical,bus_electrical,inout,power,kW,load is negative in the bus balance,nothing,nothing,main,one
+bus,bus_electrical,bus_electrical,inout,power,kW,"sum of source, storage, and load bus powers must be zero",nothing,nothing,main,many_to_one
+wind_resource,resource_state,resource_state,out,wind_speed,m/s,positive wind speed increases available rotor power,nothing,nothing,main,one
+wind_rotor,resource_state,resource_state,in,wind_speed,m/s,positive wind speed increases available rotor power,nothing,nothing,main,one
+wind_rotor,control_signal,control_signal,in,curtailment,fraction,positive curtailment reduces wind shaft power,nothing,nothing,main,one
+wind_rotor,shaft_mechanical,shaft_mechanical,out,power,kW,positive shaft power leaves rotor,nothing,nothing,main,one
+wind_rotor,motion_state,motion_state,in,pitch_state,"rad,rad/s",positive theta reduces effective inflow by cos(theta),body,platform_origin,main,one
+wind_rotor,platform_wrench,platform_wrench,out,moment,N*m,positive pitch moment increases platform theta,body,platform_origin,main,one
+wind_generator,shaft_mechanical,shaft_mechanical,in,power,kW,positive shaft power enters generator,nothing,nothing,main,one
+wind_generator,device_electrical,device_electrical,out,power,kW,positive electrical power leaves generator,nothing,nothing,main,one
+wind_converter,device_electrical,device_electrical,in,power,kW,positive power enters converter from wind generator,nothing,nothing,main,one
+wind_converter,bus_electrical,bus_electrical,out,power,kW,positive power injects into bus,nothing,nothing,main,one
+wave_resource,resource_state,resource_state,out,wave_power_flux,kW/m,positive wave flux increases available WEC power,nothing,nothing,main,one
+wave_wec,resource_state,resource_state,in,wave_power_flux,kW/m,positive flux increases available WEC power,nothing,nothing,main,one
+wave_wec,control_signal,control_signal,in,curtailment,fraction,positive curtailment reduces WEC power,nothing,nothing,main,one
+wave_wec,device_electrical,device_electrical,out,power,kW,positive power leaves WEC surrogate,nothing,nothing,main,one
+wave_converter,device_electrical,device_electrical,in,power,kW,positive power enters converter from WEC surrogate,nothing,nothing,main,one
+wave_converter,bus_electrical,bus_electrical,out,power,kW,positive power injects into bus,nothing,nothing,main,one
+hydrokinetic_resource,resource_state,resource_state,out,current_speed,m/s,positive current speed increases available rotor power,nothing,nothing,main,one
+hydrokinetic_rotor,resource_state,resource_state,in,current_speed,m/s,positive current speed increases available rotor power,nothing,nothing,main,one
+hydrokinetic_rotor,control_signal,control_signal,in,curtailment,fraction,positive curtailment reduces hydrokinetic shaft power,nothing,nothing,main,one
+hydrokinetic_rotor,shaft_mechanical,shaft_mechanical,out,power,kW,positive shaft power leaves hydrokinetic rotor,nothing,nothing,main,one
+hydrokinetic_generator,shaft_mechanical,shaft_mechanical,in,power,kW,positive shaft power enters generator,nothing,nothing,main,one
+hydrokinetic_generator,device_electrical,device_electrical,out,power,kW,positive electrical power leaves generator,nothing,nothing,main,one
+hydrokinetic_converter,device_electrical,device_electrical,in,power,kW,positive power enters converter from hydrokinetic generator,nothing,nothing,main,one
+hydrokinetic_converter,bus_electrical,bus_electrical,out,power,kW,positive power injects into bus,nothing,nothing,main,one
+platform,platform_wrench,platform_wrench,in,moment,N*m,positive pitch moment increases theta,body,platform_origin,main,many_to_one
+platform,motion_state,motion_state,out,pitch_state,"rad,rad/s",positive theta pitches the source frame nose-up,body,platform_origin,main,one

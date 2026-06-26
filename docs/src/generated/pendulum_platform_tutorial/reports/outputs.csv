@@ -1,0 +1,80 @@
+index,owner,name,unit,time_index,scope,model_path,label
+1,solar_resource,solar_irradiance_kw_per_m2,kW/m^2,1,interval,prescribed,Solar irradiance
+2,solar_resource,solar_irradiance_kw_per_m2,kW/m^2,2,interval,prescribed,Solar irradiance
+3,solar_resource,solar_irradiance_kw_per_m2,kW/m^2,3,interval,prescribed,Solar irradiance
+4,solar_array,solar_device_power_kw,kW,1,interval,surrogate,Solar device power
+5,solar_array,solar_device_power_kw,kW,2,interval,surrogate,Solar device power
+6,solar_array,solar_device_power_kw,kW,3,interval,surrogate,Solar device power
+7,solar_converter,solar_bus_power_kw,kW,1,interval,surrogate,Solar bus power
+8,solar_converter,solar_bus_power_kw,kW,2,interval,surrogate,Solar bus power
+9,solar_converter,solar_bus_power_kw,kW,3,interval,surrogate,Solar bus power
+10,solar_converter,solar_converter_loss_kw,kW,1,interval,surrogate,Solar converter loss
+11,solar_converter,solar_converter_loss_kw,kW,2,interval,surrogate,Solar converter loss
+12,solar_converter,solar_converter_loss_kw,kW,3,interval,surrogate,Solar converter loss
+13,battery,battery_soc,fraction,1,interval,surrogate,Battery SOC
+14,battery,battery_soc,fraction,2,interval,surrogate,Battery SOC
+15,battery,battery_soc,fraction,3,interval,surrogate,Battery SOC
+16,battery,battery_device_power_kw,kW,1,interval,surrogate,Battery device power
+17,battery,battery_device_power_kw,kW,2,interval,surrogate,Battery device power
+18,battery,battery_device_power_kw,kW,3,interval,surrogate,Battery device power
+19,battery_converter,battery_bus_power_kw,kW,1,interval,surrogate,Battery bus power
+20,battery_converter,battery_bus_power_kw,kW,2,interval,surrogate,Battery bus power
+21,battery_converter,battery_bus_power_kw,kW,3,interval,surrogate,Battery bus power
+22,battery_converter,battery_converter_loss_kw,kW,1,interval,surrogate,Battery converter loss
+23,battery_converter,battery_converter_loss_kw,kW,2,interval,surrogate,Battery converter loss
+24,battery_converter,battery_converter_loss_kw,kW,3,interval,surrogate,Battery converter loss
+25,load,load_bus_power_kw,kW,1,interval,prescribed,Load bus power
+26,load,load_bus_power_kw,kW,2,interval,prescribed,Load bus power
+27,load,load_bus_power_kw,kW,3,interval,prescribed,Load bus power
+28,bus,bus_balance_residual_kw,kW,1,interval,hard_residual,Bus balance residual
+29,bus,bus_balance_residual_kw,kW,2,interval,hard_residual,Bus balance residual
+30,bus,bus_balance_residual_kw,kW,3,interval,hard_residual,Bus balance residual
+31,bus,bus_voltage_basis,p.u.,nothing,design,hard_residual,Bus voltage basis
+32,wind_resource,wind_speed_m_s,m/s,1,interval,prescribed,Wind speed
+33,wind_resource,wind_speed_m_s,m/s,2,interval,prescribed,Wind speed
+34,wind_resource,wind_speed_m_s,m/s,3,interval,prescribed,Wind speed
+35,wind_rotor,wind_shaft_power_kw,kW,1,interval,package_backed,Wind shaft power
+36,wind_rotor,wind_shaft_power_kw,kW,2,interval,package_backed,Wind shaft power
+37,wind_rotor,wind_shaft_power_kw,kW,3,interval,package_backed,Wind shaft power
+38,wind_rotor,wind_platform_moment_nm,N*m,1,interval,package_backed,Wind platform pitch moment
+39,wind_rotor,wind_platform_moment_nm,N*m,2,interval,package_backed,Wind platform pitch moment
+40,wind_rotor,wind_platform_moment_nm,N*m,3,interval,package_backed,Wind platform pitch moment
+41,wind_generator,wind_device_power_kw,kW,1,interval,package_backed,Wind generator electrical power
+42,wind_generator,wind_device_power_kw,kW,2,interval,package_backed,Wind generator electrical power
+43,wind_generator,wind_device_power_kw,kW,3,interval,package_backed,Wind generator electrical power
+44,wind_converter,wind_bus_power_kw,kW,1,interval,package_backed,Wind bus power
+45,wind_converter,wind_bus_power_kw,kW,2,interval,package_backed,Wind bus power
+46,wind_converter,wind_bus_power_kw,kW,3,interval,package_backed,Wind bus power
+47,wave_resource,wave_power_flux_kw_per_m,kW/m,1,interval,prescribed,Wave power flux
+48,wave_resource,wave_power_flux_kw_per_m,kW/m,2,interval,prescribed,Wave power flux
+49,wave_resource,wave_power_flux_kw_per_m,kW/m,3,interval,prescribed,Wave power flux
+50,wave_wec,wave_device_power_kw,kW,1,interval,surrogate,Wave device power
+51,wave_wec,wave_device_power_kw,kW,2,interval,surrogate,Wave device power
+52,wave_wec,wave_device_power_kw,kW,3,interval,surrogate,Wave device power
+53,wave_converter,wave_bus_power_kw,kW,1,interval,surrogate,Wave bus power
+54,wave_converter,wave_bus_power_kw,kW,2,interval,surrogate,Wave bus power
+55,wave_converter,wave_bus_power_kw,kW,3,interval,surrogate,Wave bus power
+56,hydrokinetic_resource,hydrokinetic_current_m_s,m/s,1,interval,prescribed,Hydrokinetic current speed
+57,hydrokinetic_resource,hydrokinetic_current_m_s,m/s,2,interval,prescribed,Hydrokinetic current speed
+58,hydrokinetic_resource,hydrokinetic_current_m_s,m/s,3,interval,prescribed,Hydrokinetic current speed
+59,hydrokinetic_rotor,hydrokinetic_shaft_power_kw,kW,1,interval,package_backed,Hydrokinetic shaft power
+60,hydrokinetic_rotor,hydrokinetic_shaft_power_kw,kW,2,interval,package_backed,Hydrokinetic shaft power
+61,hydrokinetic_rotor,hydrokinetic_shaft_power_kw,kW,3,interval,package_backed,Hydrokinetic shaft power
+62,hydrokinetic_generator,hydrokinetic_device_power_kw,kW,1,interval,package_backed,Hydrokinetic generator electrical power
+63,hydrokinetic_generator,hydrokinetic_device_power_kw,kW,2,interval,package_backed,Hydrokinetic generator electrical power
+64,hydrokinetic_generator,hydrokinetic_device_power_kw,kW,3,interval,package_backed,Hydrokinetic generator electrical power
+65,hydrokinetic_converter,hydrokinetic_bus_power_kw,kW,1,interval,package_backed,Hydrokinetic bus power
+66,hydrokinetic_converter,hydrokinetic_bus_power_kw,kW,2,interval,package_backed,Hydrokinetic bus power
+67,hydrokinetic_converter,hydrokinetic_bus_power_kw,kW,3,interval,package_backed,Hydrokinetic bus power
+68,hydrokinetic_converter,hydrokinetic_converter_loss_kw,kW,1,interval,package_backed,Hydrokinetic converter loss
+69,hydrokinetic_converter,hydrokinetic_converter_loss_kw,kW,2,interval,package_backed,Hydrokinetic converter loss
+70,hydrokinetic_converter,hydrokinetic_converter_loss_kw,kW,3,interval,package_backed,Hydrokinetic converter loss
+71,platform,platform_theta_rad,rad,1,interval,surrogate,Platform pitch angle
+72,platform,platform_theta_rad,rad,2,interval,surrogate,Platform pitch angle
+73,platform,platform_theta_rad,rad,3,interval,surrogate,Platform pitch angle
+74,platform,platform_omega_rad_s,rad/s,1,interval,surrogate,Platform pitch rate
+75,platform,platform_omega_rad_s,rad/s,2,interval,surrogate,Platform pitch rate
+76,platform,platform_omega_rad_s,rad/s,3,interval,surrogate,Platform pitch rate
+77,platform,platform_pitch_moment_nm,N*m,1,interval,surrogate,Platform pitch moment
+78,platform,platform_pitch_moment_nm,N*m,2,interval,surrogate,Platform pitch moment
+79,platform,platform_pitch_moment_nm,N*m,3,interval,surrogate,Platform pitch moment

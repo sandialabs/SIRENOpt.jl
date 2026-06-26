@@ -1,0 +1,22 @@
+/Manifest.toml
+*DS_STORE
+*.png
+*.vscode
+*.out
+
+# Local environments
+examples/Manifest.toml
+
+# Generated example outputs
+examples/solver_logs/*
+!examples/solver_logs/.gitkeep
+examples/*_controls.png
+examples/*_profile.png
+examples/results/
+
+# Generated docs output
+docs/build/
+docs/Manifest.toml
+
+# Local reference/backups
+examples/opt_coding_style_example_original.jl

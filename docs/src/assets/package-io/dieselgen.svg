@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="286" viewBox="0 0 880 286">
+  <style>
+    .title { font: 700 20px sans-serif; fill: #1f2937; }
+    .subtitle { font: 600 14px sans-serif; fill: #334155; }
+    .body { font: 13px sans-serif; fill: #334155; }
+    .small { font: 12px sans-serif; fill: #475569; }
+    .box { fill: #f8fafc; stroke: #94a3b8; stroke-width: 1.5; rx: 8; }
+    .pkg { fill: #eff6ff; stroke: #3b82f6; stroke-width: 2; rx: 8; }
+    .siren { fill: #ecfeff; stroke: #0891b2; stroke-width: 2; rx: 8; }
+    .arrow { stroke: #475569; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+    .note { fill: #fff7ed; stroke: #f59e0b; stroke-width: 1.5; rx: 8; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+  </defs>
+  <text x="28" y="32" class="title">Diesel Boundary: DieselGen fuel-use map inside SIRENOpt</text>
+  <rect x="28" y="58" width="238" height="158" class="box"/>
+  <text x="46" y="84" class="subtitle">SIRENOpt inputs</text>
+  <text x="46" y="110" class="body">DieselDesign:</text>
+  <text x="62" y="130" class="small">rated power, min power, engine_model template</text>
+  <text x="46" y="154" class="body">dispatch power [kW]</text>
+  <text x="46" y="176" class="body">step length [h]</text>
+
+  <rect x="320" y="58" width="250" height="158" class="pkg"/>
+  <text x="350" y="84" class="subtitle">DieselGen calculations</text>
+  <text x="350" y="110" class="body">default_diesel_map / fuel</text>
+  <text x="350" y="132" class="body">fuel_power_kw</text>
+  <text x="350" y="154" class="body">fuel_mass_flow_kg_s</text>
+  <text x="350" y="176" class="body">fuel_volume_flow_l_s</text>
+
+  <rect x="624" y="58" width="228" height="158" class="siren"/>
+  <text x="650" y="84" class="subtitle">SIRENOpt outputs</text>
+  <text x="650" y="110" class="body">diesel_engine_design(...)</text>
+  <text x="650" y="132" class="body">diesel_fuel_used(...)</text>
+  <text x="650" y="154" class="small">fuel volume per step [L]</text>
+  <text x="650" y="176" class="small">electrical output handled elsewhere</text>
+
+  <path d="M266 137 L320 137" class="arrow"/>
+  <path d="M570 137 L624 137" class="arrow"/>
+
+  <rect x="28" y="232" width="824" height="34" class="note"/>
+  <text x="44" y="254" class="small">Current split: DieselGen covers engine and fuel bookkeeping. Generator and converter stages stay separate in SIRENOpt so diesel follows the same shaft-to-bus structure as the renewable sources.</text>
+</svg>
