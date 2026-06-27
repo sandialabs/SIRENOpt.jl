@@ -103,8 +103,8 @@ makedocs(
     remotes = nothing,
     format = Documenter.HTML(
         prettyurls = get(ENV, "CI", "false") == "true",
-        edit_link = "main",
-        repolink = "https://github.com/kevmoor/SIRENOpt.jl",
+        edit_link = "master",
+        repolink = "https://github.com/sandialabs/SIRENOpt.jl",
     ),
     pages = [
         "Home" => "index.md",
@@ -122,5 +122,5 @@ makedocs(
 )
 
 if get(ENV, "CI", "false") == "true"
-    deploydocs(; repo = "github.com/kevmoor/SIRENOpt.jl.git")
+    deploydocs(; repo = "github.com/sandialabs/SIRENOpt.jl.git", devbranch = "master")
 end

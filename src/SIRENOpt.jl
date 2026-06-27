@@ -4,7 +4,6 @@ using LinearAlgebra
 using SparseArrays
 using Statistics
 using Dates
-import BuoyData
 import UnsteadyKineticRotorDynamics
 import Desal
 import DimensionfulAngles

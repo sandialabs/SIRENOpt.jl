@@ -49,7 +49,7 @@ goal checklist in `OntologyGoal.md`.
 The final code-bearing acceptance chunk was checked with:
 
 ```sh
-/Users/kevmoor/.juliaup/bin/julia --project=. test/runtests.jl
+julia --project=. test/runtests.jl
 ```
 
 Result: default tier passed with 427 tests and no failures.
@@ -58,7 +58,7 @@ The final multi-level acceptance fixture was checked with a focused replay smoke
 that included terminal SOC and WEC PTO residual evidence:
 
 ```sh
-/Users/kevmoor/.juliaup/bin/julia --project=. -e 'using Test; include("examples/multilevel_collocation_hybrid_demo.jl")'
+julia --project=. -e 'using Test; include("examples/multilevel_collocation_hybrid_demo.jl")'
 ```
 
 Result: terminal SOC returned to its initial value and maximum registered
@@ -67,7 +67,7 @@ constraint violation was `2.220446049250313e-16`.
 The documentation was checked after this audit note was added with:
 
 ```sh
-/Users/kevmoor/.juliaup/bin/julia --project=docs docs/make.jl
+julia --project=docs docs/make.jl
 ```
 
 Result: build passed.
