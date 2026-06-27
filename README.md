@@ -5,8 +5,9 @@ This is a mid-fidelity prototype ontology for hybrid power, storage, and platfor
 ## Installation
 
 `SIRENOpt` currently depends on several unregistered packages listed in
-`Project.toml`. Instantiate from the `SIRENOpt.jl` checkout to download those
-source dependencies:
+`Project.toml` using Julia 1.12 or newer, where Pkg supports project
+`[sources]` entries. Instantiate from the `SIRENOpt.jl` checkout to download
+those source dependencies:
 
 ```julia
 using Pkg
