@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="300" viewBox="0 0 880 300">
+  <style>
+    .title { font: 700 20px sans-serif; fill: #1f2937; }
+    .subtitle { font: 600 14px sans-serif; fill: #334155; }
+    .body { font: 13px sans-serif; fill: #334155; }
+    .small { font: 12px sans-serif; fill: #475569; }
+    .box { fill: #f8fafc; stroke: #94a3b8; stroke-width: 1.5; rx: 8; }
+    .pkg { fill: #eff6ff; stroke: #3b82f6; stroke-width: 2; rx: 8; }
+    .siren { fill: #ecfeff; stroke: #0891b2; stroke-width: 2; rx: 8; }
+    .arrow { stroke: #475569; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+    .note { fill: #fff7ed; stroke: #f59e0b; stroke-width: 1.5; rx: 8; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+  </defs>
+  <text x="28" y="32" class="title">Electrical Coupling Boundary: PowerConverterDynamics</text>
+  <rect x="28" y="58" width="238" height="172" class="box"/>
+  <text x="46" y="84" class="subtitle">SIRENOpt inputs</text>
+  <text x="46" y="110" class="body">ConverterDesign:</text>
+  <text x="62" y="130" class="small">rated power, bidirectionality, converter_model</text>
+  <text x="46" y="154" class="body">source voltage [V]</text>
+  <text x="46" y="176" class="body">bus voltage [V]</text>
+  <text x="46" y="198" class="body">signed device power [kW]</text>
+
+  <rect x="320" y="58" width="250" height="172" class="pkg"/>
+  <text x="346" y="84" class="subtitle">PowerConverterDynamics calculations</text>
+  <text x="346" y="110" class="body">ConverterParams(...)</text>
+  <text x="346" y="132" class="body">SystemState(...)</text>
+  <text x="346" y="154" class="body">converter_efficiency(vsrc, i, vbus, params)</text>
+  <text x="346" y="176" class="small">source current and power limits</text>
+
+  <rect x="624" y="58" width="228" height="172" class="siren"/>
+  <text x="650" y="84" class="subtitle">SIRENOpt outputs</text>
+  <text x="650" y="110" class="body">PowerConverterModel</text>
+  <text x="650" y="132" class="body">powerconverter_efficiency(...)</text>
+  <text x="650" y="154" class="body">powerconverter_output_kw(...)</text>
+  <text x="650" y="176" class="small">signed bus-side power [kW]</text>
+
+  <path d="M266 145 L320 145" class="arrow"/>
+  <path d="M570 145 L624 145" class="arrow"/>
+
+  <rect x="28" y="246" width="824" height="34" class="note"/>
+  <text x="44" y="268" class="small">This is the main electrical glue boundary. Every source or sink that touches the common bus can pass through the same converter logic, including supply-side and load-side sign conventions.</text>
+</svg>

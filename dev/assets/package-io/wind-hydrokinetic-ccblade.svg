@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="310" viewBox="0 0 880 310">
+  <style>
+    .title { font: 700 20px sans-serif; fill: #1f2937; }
+    .subtitle { font: 600 14px sans-serif; fill: #334155; }
+    .body { font: 13px sans-serif; fill: #334155; }
+    .small { font: 12px sans-serif; fill: #475569; }
+    .box { fill: #f8fafc; stroke: #94a3b8; stroke-width: 1.5; rx: 8; }
+    .pkg { fill: #eff6ff; stroke: #3b82f6; stroke-width: 2; rx: 8; }
+    .siren { fill: #ecfeff; stroke: #0891b2; stroke-width: 2; rx: 8; }
+    .arrow { stroke: #475569; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+    .note { fill: #fff7ed; stroke: #f59e0b; stroke-width: 1.5; rx: 8; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+  </defs>
+  <text x="28" y="32" class="title">Rotor Boundary: UnsteadyKineticRotorDynamics for Wind and Hydrokinetic</text>
+  <rect x="28" y="58" width="238" height="182" class="box"/>
+  <text x="46" y="84" class="subtitle">SIRENOpt inputs</text>
+  <text x="46" y="110" class="body">WindDesign / HydrokineticDesign:</text>
+  <text x="62" y="130" class="small">rotor diameter, rated power, cut-in/out, rotor_model</text>
+  <text x="46" y="154" class="body">WindOp / HydrokineticOp:</text>
+  <text x="62" y="174" class="small">resource speed time series, density, curtailment</text>
+  <text x="46" y="198" class="body">CCBladeRotorModel:</text>
+  <text x="62" y="218" class="small">geometry, omega, pitch, yaw, tilt, fluid props</text>
+
+  <rect x="320" y="58" width="250" height="182" class="pkg"/>
+  <text x="350" y="84" class="subtitle">UnsteadyKineticRotorDynamics calculations</text>
+  <text x="350" y="110" class="body">windturbine_op_motion</text>
+  <text x="350" y="132" class="body">UnsteadyState(...)</text>
+  <text x="350" y="154" class="body">unsteady_step!(...)</text>
+  <text x="350" y="176" class="body">rotor_loads(...)</text>
+  <text x="350" y="198" class="small">mechanical rotor torque and power</text>
+
+  <rect x="624" y="58" width="228" height="182" class="siren"/>
+  <text x="650" y="84" class="subtitle">SIRENOpt outputs</text>
+  <text x="650" y="110" class="body">ccblade_rotor_power_kw(...)</text>
+  <text x="650" y="132" class="small">positive shaft power [kW]</text>
+  <text x="650" y="158" class="body">wind_power(...)</text>
+  <text x="650" y="180" class="body">hydrokinetic_power(...)</text>
+  <text x="650" y="202" class="small">resource and curtailment applied upstream of generator</text>
+
+  <path d="M266 149 L320 149" class="arrow"/>
+  <path d="M570 149 L624 149" class="arrow"/>
+
+  <rect x="28" y="258" width="824" height="36" class="note"/>
+  <text x="44" y="281" class="small">The same adapter supports air and water cases. In the hydrokinetic use case, fluid density, viscosity, sound speed, and arm sign are switched to water-oriented defaults.</text>
+</svg>

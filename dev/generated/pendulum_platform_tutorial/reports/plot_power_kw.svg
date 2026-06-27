@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="DynamicMultilevelHybridOntology power (kW)">
+<rect width="900" height="520" fill="#ffffff"/>
+<text x="82" y="28" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1f2933">DynamicMultilevelHybridOntology power (kW)</text>
+<line x1="82.0" y1="452.0" x2="662.0" y2="452.0" stroke="#334155" stroke-width="1.2"/>
+<line x1="82.0" y1="48.0" x2="82.0" y2="452.0" stroke="#334155" stroke-width="1.2"/>
+<line x1="82.0" y1="452.0" x2="662.0" y2="452.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="72" y="456.0" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#475569">-1.7</text>
+<line x1="82.0" y1="351.0" x2="662.0" y2="351.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="72" y="355.0" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#475569">-0.9097</text>
+<line x1="82.0" y1="250.0" x2="662.0" y2="250.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="72" y="254.0" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#475569">-0.1194</text>
+<line x1="82.0" y1="149.0" x2="662.0" y2="149.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="72" y="153.0" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#475569">0.6708</text>
+<line x1="82.0" y1="48.0" x2="662.0" y2="48.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="72" y="52.0" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#475569">1.461</text>
+<line x1="82.0" y1="452.0" x2="82.0" y2="457.0" stroke="#334155" stroke-width="1"/>
+<text x="82.0" y="474.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">-7.2</text>
+<line x1="227.0" y1="452.0" x2="227.0" y2="457.0" stroke="#334155" stroke-width="1"/>
+<text x="227.0" y="474.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">26.4</text>
+<line x1="372.0" y1="452.0" x2="372.0" y2="457.0" stroke="#334155" stroke-width="1"/>
+<text x="372.0" y="474.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">60.0</text>
+<line x1="517.0" y1="452.0" x2="517.0" y2="457.0" stroke="#334155" stroke-width="1"/>
+<text x="517.0" y="474.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">93.6</text>
+<line x1="662.0" y1="452.0" x2="662.0" y2="457.0" stroke="#334155" stroke-width="1"/>
+<text x="662.0" y="474.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">127.2</text>
+<text x="372.0" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#334155">time_s</text>
+<text transform="translate(18 250.0) rotate(-90)" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#334155">kW</text>
+<polyline fill="none" stroke="#1f77b4" stroke-width="2.1" points="113.07,193.84 372.0,198.95 630.93,209.85"/>
+<polyline fill="none" stroke="#d62728" stroke-width="2.1" points="113.07,195.47 372.0,200.38 630.93,210.84"/>
+<polyline fill="none" stroke="#2ca02c" stroke-width="2.1" points="113.07,234.73 372.0,234.73 630.93,234.73"/>
+<polyline fill="none" stroke="#9467bd" stroke-width="2.1" points="113.07,234.73 372.0,234.73 630.93,234.73"/>
+<polyline fill="none" stroke="#ff7f0e" stroke-width="2.1" points="113.07,417.32 372.0,430.36 630.93,417.32"/>
+<polyline fill="none" stroke="#17becf" stroke-width="2.1" points="113.07,206.31 372.0,206.31 630.93,218.04"/>
+<polyline fill="none" stroke="#8c564b" stroke-width="2.1" points="113.07,229.87 372.0,229.87 630.93,232.01"/>
+<polyline fill="none" stroke="#7f7f7f" stroke-width="2.1" points="113.07,230.3 372.0,230.3 630.93,232.09"/>
+<polyline fill="none" stroke="#bcbd22" stroke-width="2.1" points="113.07,88.54 372.0,69.64 630.93,70.47"/>
+<polyline fill="none" stroke="#e377c2" stroke-width="2.1" points="113.07,95.85 372.0,77.9 630.93,78.69"/>
+<polyline fill="none" stroke="#1f77b4" stroke-width="2.1" points="113.07,234.73 372.0,234.73 630.93,234.73"/>
+<polyline fill="none" stroke="#d62728" stroke-width="2.1" points="113.07,234.73 372.0,234.73 630.93,234.73"/>
+<polyline fill="none" stroke="#2ca02c" stroke-width="2.1" points="113.07,234.73 372.0,234.73 630.93,234.73"/>
+<line x1="686.0" y1="56.0" x2="708.0" y2="56.0" stroke="#1f77b4" stroke-width="2.4"/>
+<text x="716.0" y="60.0" font-family="Arial, sans-serif" font-size="11" fill="#1f2933">Solar device power</text>
+<line x1="686.0" y1="78.0" x2="708.0" y2="78.0" stroke="#d62728" stroke-width="2.4"/>
+<text x="716.0" y="82.0" font-family="Arial, sans-serif" font-size="11" fill="#1f2933">Solar bus power</text>
+<line x1="686.0" y1="100.0" x2="708.0" y2="100.0" stroke="#2ca02c" stroke-width="2.4"/>
+<text x="716.0" y="104.0" font-family="Arial, sans-serif" font-size="11" fill="#1f2933">Battery device power</text>
+<line x1="686.0" y1="122.0" x2="708.0" y2="122.0" stroke="#9467bd" stroke-width="2.4"/>
+<text x="716.0" y="126.0" font-family="Arial, sans-serif" font-size="11" fill="#1f2933">Battery bus power</text>
+<line x1="686.0" y1="144.0" x2="708.0" y2="144.0" stroke="#ff7f0e" stroke-width="2.4"/>
+<text x="716.0" y="148.0" font-family="Arial, sans-serif" font-size="11" fill="#1f2933">Load bus power</text>
+<line x1="686.0" y1="166.0" x2="708.0" y2="166.0" stroke="#17becf" stroke-width="2.4"/>
+<text x="716.0" y="170.0" font-family="Arial, sans-serif" font-size="11" fill="#1f2933">Wind shaft power</text>
+<line x1="686.0" y1="188.0" x2="708.0" y2="188.0" stroke="#8c564b" stroke-width="2.4"/>
+<text x="716.0" y="192.0" font-family="Arial, sans-serif" font-size="11" fill="#1f2933">Wind generator electrical power</text>
+<line x1="686.0" y1="210.0" x2="708.0" y2="210.0" stroke="#7f7f7f" stroke-width="2.4"/>
+<text x="716.0" y="214.0" font-family="Arial, sans-serif" font-size="11" fill="#1f2933">Wind bus power</text>
+<line x1="686.0" y1="232.0" x2="708.0" y2="232.0" stroke="#bcbd22" stroke-width="2.4"/>
+<text x="716.0" y="236.0" font-family="Arial, sans-serif" font-size="11" fill="#1f2933">Wave device power</text>
+<line x1="686.0" y1="254.0" x2="708.0" y2="254.0" stroke="#e377c2" stroke-width="2.4"/>
+<text x="716.0" y="258.0" font-family="Arial, sans-serif" font-size="11" fill="#1f2933">Wave bus power</text>
+<line x1="686.0" y1="276.0" x2="708.0" y2="276.0" stroke="#1f77b4" stroke-width="2.4"/>
+<text x="716.0" y="280.0" font-family="Arial, sans-serif" font-size="11" fill="#1f2933">Hydrokinetic shaft power</text>
+<line x1="686.0" y1="298.0" x2="708.0" y2="298.0" stroke="#d62728" stroke-width="2.4"/>
+<text x="716.0" y="302.0" font-family="Arial, sans-serif" font-size="11" fill="#1f2933">Hydrokinetic generator electrical power</text>
+<line x1="686.0" y1="320.0" x2="708.0" y2="320.0" stroke="#2ca02c" stroke-width="2.4"/>
+<text x="716.0" y="324.0" font-family="Arial, sans-serif" font-size="11" fill="#1f2933">Hydrokinetic bus power</text>
+</svg>

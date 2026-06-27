@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="DynamicMultilevelHybridOntology platform_motion (rad)">
+<rect width="900" height="520" fill="#ffffff"/>
+<text x="82" y="28" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1f2933">DynamicMultilevelHybridOntology platform_motion (rad)</text>
+<line x1="82.0" y1="452.0" x2="662.0" y2="452.0" stroke="#334155" stroke-width="1.2"/>
+<line x1="82.0" y1="48.0" x2="82.0" y2="452.0" stroke="#334155" stroke-width="1.2"/>
+<line x1="82.0" y1="452.0" x2="662.0" y2="452.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="72" y="456.0" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#475569">-0.03746</text>
+<line x1="82.0" y1="351.0" x2="662.0" y2="351.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="72" y="355.0" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#475569">0.1374</text>
+<line x1="82.0" y1="250.0" x2="662.0" y2="250.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="72" y="254.0" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#475569">0.3122</text>
+<line x1="82.0" y1="149.0" x2="662.0" y2="149.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="72" y="153.0" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#475569">0.487</text>
+<line x1="82.0" y1="48.0" x2="662.0" y2="48.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="72" y="52.0" text-anchor="end" font-family="Arial, sans-serif" font-size="11" fill="#475569">0.6618</text>
+<line x1="82.0" y1="452.0" x2="82.0" y2="457.0" stroke="#334155" stroke-width="1"/>
+<text x="82.0" y="474.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">-7.2</text>
+<line x1="227.0" y1="452.0" x2="227.0" y2="457.0" stroke="#334155" stroke-width="1"/>
+<text x="227.0" y="474.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">26.4</text>
+<line x1="372.0" y1="452.0" x2="372.0" y2="457.0" stroke="#334155" stroke-width="1"/>
+<text x="372.0" y="474.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">60.0</text>
+<line x1="517.0" y1="452.0" x2="517.0" y2="457.0" stroke="#334155" stroke-width="1"/>
+<text x="517.0" y="474.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">93.6</text>
+<line x1="662.0" y1="452.0" x2="662.0" y2="457.0" stroke="#334155" stroke-width="1"/>
+<text x="662.0" y="474.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">127.2</text>
+<text x="372.0" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#334155">time_s</text>
+<text transform="translate(18 250.0) rotate(-90)" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#334155">rad</text>
+<polyline fill="none" stroke="#1f77b4" stroke-width="2.1" points="113.07,430.36 372.0,430.36 630.93,69.64"/>
+<line x1="686.0" y1="56.0" x2="708.0" y2="56.0" stroke="#1f77b4" stroke-width="2.4"/>
+<text x="716.0" y="60.0" font-family="Arial, sans-serif" font-size="11" fill="#1f2933">Platform pitch angle</text>
+</svg>

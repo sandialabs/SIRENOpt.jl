@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="290" viewBox="0 0 880 290">
+  <style>
+    .title { font: 700 20px sans-serif; fill: #1f2937; }
+    .subtitle { font: 600 14px sans-serif; fill: #334155; }
+    .body { font: 13px sans-serif; fill: #334155; }
+    .small { font: 12px sans-serif; fill: #475569; }
+    .box { fill: #f8fafc; stroke: #94a3b8; stroke-width: 1.5; rx: 8; }
+    .pkg { fill: #eff6ff; stroke: #3b82f6; stroke-width: 2; rx: 8; }
+    .siren { fill: #ecfeff; stroke: #0891b2; stroke-width: 2; rx: 8; }
+    .arrow { stroke: #475569; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+    .note { fill: #fff7ed; stroke: #f59e0b; stroke-width: 1.5; rx: 8; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+  </defs>
+  <text x="28" y="32" class="title">Solar Boundary: PVlib inside SIRENOpt</text>
+  <rect x="28" y="58" width="238" height="160" class="box"/>
+  <text x="46" y="84" class="subtitle">SIRENOpt inputs</text>
+  <text x="46" y="110" class="body">SolarDesign.area [m^2]</text>
+  <text x="46" y="132" class="body">PvlibSolarModel:</text>
+  <text x="62" y="152" class="small">module, inverter, tilt, azimuth, altitude, albedo</text>
+  <text x="46" y="176" class="body">SolarOp:</text>
+  <text x="62" y="196" class="small">WeatherSample, SolarPosition, curtailment</text>
+
+  <rect x="320" y="58" width="250" height="160" class="pkg"/>
+  <text x="352" y="84" class="subtitle">PVlib calculations</text>
+  <text x="352" y="110" class="body">get_total_irradiance</text>
+  <text x="352" y="132" class="body">sapm_cell_temperature</text>
+  <text x="352" y="154" class="body">sapm_effective_irradiance</text>
+  <text x="352" y="176" class="body">sapm_dc_components</text>
+  <text x="352" y="198" class="small">optional: sandia_ac_power</text>
+
+  <rect x="624" y="58" width="228" height="160" class="siren"/>
+  <text x="650" y="84" class="subtitle">SIRENOpt outputs</text>
+  <text x="650" y="110" class="body">pvlib_solar_dc_power_kw(...)</text>
+  <text x="650" y="132" class="small">nonnegative PV power [kW]</text>
+  <text x="650" y="158" class="body">solar_power(...)</text>
+  <text x="650" y="180" class="small">curtailment applied before bus coupling</text>
+
+  <path d="M266 138 L320 138" class="arrow"/>
+  <path d="M570 138 L624 138" class="arrow"/>
+
+  <rect x="28" y="234" width="824" height="36" class="note"/>
+  <text x="44" y="257" class="small">Current ontology choice: keep the package boundary at PV source power. Generator and converter losses remain explicit in SIRENOpt so the electrical coupling stays consistent with the other subsystems.</text>
+</svg>

@@ -1,0 +1,2 @@
+max_abs_bus_balance_residual_kw,max_abs_battery_inventory_residual_kwh,max_abs_diesel_fuel_inventory_residual_l,max_abs_h2_inventory_residual_kg,max_abs_desal_inventory_residual_m3,max_abs_platform_kinematic_residual_rad,max_abs_platform_dynamic_residual_rad_s,max_registered_constraint_violation,feasible
+2.220446049250313e-16,0.0,0.0,0.0,0.0,0.0,0.0,2.220446049250313e-16,true
