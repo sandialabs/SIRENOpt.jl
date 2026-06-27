@@ -1,5 +1,11 @@
 # SIRENOpt.jl (prototype)
 
+[![Tests](https://github.com/sandialabs/SIRENOpt.jl/actions/workflows/CI.yml/badge.svg?branch=master)](https://github.com/sandialabs/SIRENOpt.jl/actions/workflows/CI.yml)
+[![Docs](https://github.com/sandialabs/SIRENOpt.jl/actions/workflows/Docs.yml/badge.svg?branch=master)](https://sandialabs.github.io/SIRENOpt.jl/dev/)
+[![Coverage](https://codecov.io/gh/sandialabs/SIRENOpt.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/sandialabs/SIRENOpt.jl)
+
+Documentation is hosted at [sandialabs.github.io/SIRENOpt.jl/dev/](https://sandialabs.github.io/SIRENOpt.jl/dev/).
+
 This is a mid-fidelity prototype ontology for hybrid power, storage, and platform dynamics in Julia. It provides placeholder component models (solar, wind, wave, diesel, generators, converters, battery, H2, desalination) plus a controller and a step-by-step simulator that are designed to be AD-friendly and swappable with higher-fidelity packages later.
 
 ## Installation
