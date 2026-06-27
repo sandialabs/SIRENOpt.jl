@@ -4,8 +4,8 @@ version = "0.1.0"
 authors = ["Kevin R. Moore <kevmoor@sandia.gov> and contributors"]
 
 [deps]
+AgnosticStorageDynamics = "32e03c9e-1ca1-4f94-998d-0c16334532c1"
 BuoyData = "31efde5a-9a5e-4933-8696-7df4d2d7b37b"
-UnsteadyKineticRotorDynamics = "51f0175b-34ed-4c43-bdd0-6e07bed75fb5"
 Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
 DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"
 Desal = "c10c95ac-9782-4ee4-9116-e2afe774bfc7"
@@ -13,39 +13,76 @@ DieselGen = "bc32595d-1e16-433f-a342-06d36c30239a"
 DimensionfulAngles = "2d4b8d7a-02d9-40f9-9abe-9c695b77de0d"
 FLOWMath = "6cb5d3fb-0fe8-4cc2-bd89-9fe0b19a99d3"
 GeneratorSE = "5123460e-7fba-4c4e-a1c3-84f556528963"
-AgnosticStorageDynamics = "32e03c9e-1ca1-4f94-998d-0c16334532c1"
 H2Gen = "723521b7-fb78-4ee2-baa8-3c80454e07bc"
 Hydrodynamics = "63c6a582-8669-4cdf-95d2-d1c53f837950"
 ImplicitAD = "e7cbb90b-9b31-4eb2-a8c8-45099c074ee1"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 Mooring = "54d656fe-1954-4949-b509-86ef6fd939c8"
 NLsolve = "2774e3e8-f4cf-5e23-947b-6d7e65073b56"
-PowerConverterDynamics = "aefe4765-8842-4c6b-bc21-1d476c04fa12"
 PVlib = "7b90ca13-13a1-463a-b450-7b420c616eff"
+PowerConverterDynamics = "aefe4765-8842-4c6b-bc21-1d476c04fa12"
 Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
 SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
 Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
 Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
+UnsteadyKineticRotorDynamics = "51f0175b-34ed-4c43-bdd0-6e07bed75fb5"
 WaveSpectra = "9da5bd80-4f3d-48a2-a37e-447dff2ef7bc"
 
-[sources]
-AgnosticStorageDynamics = {url = "git@cee-gitlab.sandia.gov:siren/AgnosticStorageDynamics.jl.git", rev = "master"}
-BuoyData = {url = "https://github.com/JuliaOceanWaves/BuoyData.jl.git", rev = "main"}
-Desal = {url = "git@cee-gitlab.sandia.gov:siren/Desal.jl.git", rev = "master"}
-DieselGen = {url = "git@cee-gitlab.sandia.gov:siren/DieselGen.jl.git", rev = "master"}
-DimensionfulAngles = {url = "https://github.com/JuliaOceanWaves/DimensionfulAngles.jl.git", rev = "main"}
-GeneratorSE = {url = "git@cee-gitlab.sandia.gov:siren/GeneratorSE.jl.git", rev = "master"}
-H2Gen = {url = "git@cee-gitlab.sandia.gov:siren/H2Gen.jl.git", rev = "master"}
-Hydrodynamics = {url = "git@github.com:JuliaOceanWaves/Hydrodynamics.jl.git", rev = "main"}
-Mooring = {url = "https://github.com/CMOE-TUDelft/Mooring.jl.git", rev = "main"}
-PowerConverterDynamics = {url = "git@cee-gitlab.sandia.gov:siren/PowerConverterDynamics.jl.git", rev = "master"}
-PVlib = {url = "https://github.com/sandialabs/PVlib.jl.git", rev = "main"}
-UnsteadyKineticRotorDynamics = {url = "git@cee-gitlab.sandia.gov:siren/UnsteadyKineticRotorDynamics.jl.git", rev = "master"}
-WaveSpectra = {url = "https://github.com/JuliaOceanWaves/WaveSpectra.jl.git", rev = "main"}
+[sources.AgnosticStorageDynamics]
+rev = "master"
+url = "git@cee-gitlab.sandia.gov:siren/AgnosticStorageDynamics.jl.git"
+
+[sources.BuoyData]
+rev = "main"
+url = "https://github.com/JuliaOceanWaves/BuoyData.jl.git"
+
+[sources.Desal]
+rev = "master"
+url = "git@cee-gitlab.sandia.gov:siren/Desal.jl.git"
+
+[sources.DieselGen]
+rev = "master"
+url = "git@cee-gitlab.sandia.gov:siren/DieselGen.jl.git"
+
+[sources.DimensionfulAngles]
+rev = "main"
+url = "https://github.com/JuliaOceanWaves/DimensionfulAngles.jl.git"
+
+[sources.GeneratorSE]
+rev = "master"
+url = "git@cee-gitlab.sandia.gov:siren/GeneratorSE.jl.git"
+
+[sources.H2Gen]
+rev = "master"
+url = "git@cee-gitlab.sandia.gov:siren/H2Gen.jl.git"
+
+[sources.Hydrodynamics]
+rev = "main"
+url = "git@github.com:JuliaOceanWaves/Hydrodynamics.jl.git"
+
+[sources.Mooring]
+rev = "main"
+url = "https://github.com/CMOE-TUDelft/Mooring.jl.git"
+
+[sources.PVlib]
+rev = "main"
+url = "https://github.com/sandialabs/PVlib.jl.git"
+
+[sources.PowerConverterDynamics]
+rev = "master"
+url = "git@cee-gitlab.sandia.gov:siren/PowerConverterDynamics.jl.git"
+
+[sources.UnsteadyKineticRotorDynamics]
+rev = "master"
+url = "git@cee-gitlab.sandia.gov:siren/UnsteadyKineticRotorDynamics.jl.git"
+
+[sources.WaveSpectra]
+rev = "main"
+url = "https://github.com/JuliaOceanWaves/WaveSpectra.jl.git"
 
 [compat]
+AgnosticStorageDynamics = "0.1"
 BuoyData = "0.1"
-UnsteadyKineticRotorDynamics = "0.1"
 Desal = "2"
 DieselGen = "0.1"
 DimensionfulAngles = "0.2"
@@ -53,15 +90,16 @@ FLOWMath = "1"
 FiniteDiff = "2"
 ForwardDiff = "1"
 GeneratorSE = "0.1"
-AgnosticStorageDynamics = "0.1"
 H2Gen = "1"
 Hydrodynamics = "0.1"
 ImplicitAD = "1.1.0"
 Mooring = "0.0.1"
 NLsolve = "4.5.1"
-PowerConverterDynamics = "0.1"
 PVlib = "0.1"
+PowerConverterDynamics = "0.1"
+Statistics = "1"
 Unitful = "1"
+UnsteadyKineticRotorDynamics = "0.1"
 WaveSpectra = "0.1, 0.2"
 julia = "1.10"
 
