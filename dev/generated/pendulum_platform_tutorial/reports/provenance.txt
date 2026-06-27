@@ -4,4 +4,4 @@ scenario=pendulum_tutorial_short
 formulation=collocation
 solver=(name = :deterministic_minimal_collocation, status = :solved, note = "Closed-form feasible controls for the minimal ontology fixture; registry and replay use the same equations.")
 replay_summary=(max_abs_bus_balance_residual_kw = 2.220446049250313e-16, max_abs_battery_inventory_residual_kwh = 0.0, max_abs_diesel_fuel_inventory_residual_l = 0.0, max_abs_h2_inventory_residual_kg = 0.0, max_abs_desal_inventory_residual_m3 = 0.0, max_abs_platform_kinematic_residual_rad = 0.0, max_abs_platform_dynamic_residual_rad_s = 0.0, max_registered_constraint_violation = 2.220446049250313e-16, feasible = true)
-generated_at=2026-06-27T15:58:45.978
+generated_at=2026-06-27T21:28:00.264
