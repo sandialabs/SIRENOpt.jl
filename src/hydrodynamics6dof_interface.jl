@@ -207,7 +207,8 @@ function _hydro6_parameter_tuple(model::Hydrodynamic6DOFPlatformModel, external_
         convert.(T, model.mooring[2]),
         convert.(T, model.mooring[3]),
     )
-    return (convert.(T, model.inverse_mass), hydro, pto, mooring)
+    force_other = (_hydrodynamics_linear_force, nothing, (pto, mooring))
+    return (convert.(T, model.inverse_mass), hydro, force_other, force_other)
 end
 
 function _hydro6_state_vector(state::PlatformState6DOF)

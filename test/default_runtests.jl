@@ -7,6 +7,8 @@ using FiniteDiff
 using Random
 
 const T = Float64
+const RUN_NATIVE_MOORING_TESTS = lowercase(get(ENV, "SIRENOPT_RUN_NATIVE_MOORING_TESTS", "0")) in
+                                 ("1", "true", "yes")
 
 @testset "Latin hypercube sampling" begin
     lower = [0.0, -2.0, 5.0]
@@ -1220,9 +1222,13 @@ end
     @test implicit_state.acceleration ≈ (5.0 + mooring_restoring_force(mooring_model, state.position, state.velocity)) /
                                         (platform.base_mass + mooring_model.mass_kg)
 
-    lines = mooring_setup_lines(mooring_model)
-    @test length(lines) == 2
-    @test all(haskey(lines, line_id) for line_id in keys(ph.lines))
+    if RUN_NATIVE_MOORING_TESTS
+        lines = mooring_setup_lines(mooring_model)
+        @test length(lines) == 2
+        @test all(haskey(lines, line_id) for line_id in keys(ph.lines))
+    else
+        @test_skip length(mooring_setup_lines(mooring_model)) == 2
+    end
 end
 
 

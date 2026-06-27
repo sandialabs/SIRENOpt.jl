@@ -6,21 +6,20 @@ Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
 SIRENOpt = "d5b4a993-64e1-4ef8-bb58-429dd9f6ab21"
 
 [sources]
-AgnosticStorageDynamics = {url = "git@cee-gitlab.sandia.gov:siren/AgnosticStorageDynamics.jl.git", rev = "master"}
-BuoyData = {url = "https://github.com/JuliaOceanWaves/BuoyData.jl.git", rev = "main"}
-Desal = {url = "git@cee-gitlab.sandia.gov:siren/Desal.jl.git", rev = "master"}
-DieselGen = {url = "git@cee-gitlab.sandia.gov:siren/DieselGen.jl.git", rev = "master"}
-DimensionfulAngles = {url = "https://github.com/JuliaOceanWaves/DimensionfulAngles.jl.git", rev = "main"}
-GeneratorSE = {url = "git@cee-gitlab.sandia.gov:siren/GeneratorSE.jl.git", rev = "master"}
-H2Gen = {url = "git@cee-gitlab.sandia.gov:siren/H2Gen.jl.git", rev = "master"}
-Hydrodynamics = {url = "git@github.com:JuliaOceanWaves/Hydrodynamics.jl.git", rev = "main"}
-Mooring = {url = "https://github.com/CMOE-TUDelft/Mooring.jl.git", rev = "main"}
-OptimizationParameters = {url = "https://github.com/byuflowlab/OptimizationParameters.jl.git", rev = "master"}
-PVlib = {url = "https://github.com/sandialabs/PVlib.jl.git", rev = "main"}
-PowerConverterDynamics = {url = "git@cee-gitlab.sandia.gov:siren/PowerConverterDynamics.jl.git", rev = "master"}
+AgnosticStorageDynamics = {rev = "master", url = "https://github.com/sandialabs/AgnosticStorageDynamics.jl.git"}
+Desal = {rev = "master", url = "https://github.com/sandialabs/Desal.jl.git"}
+DieselGen = {rev = "master", url = "https://github.com/sandialabs/DieselGen.jl.git"}
+DimensionfulAngles = {rev = "main", url = "https://github.com/JuliaOceanWaves/DimensionfulAngles.jl.git"}
+GeneratorSE = {rev = "master", url = "https://github.com/sandialabs/GeneratorSE.jl.git"}
+H2Gen = {rev = "master", url = "https://github.com/sandialabs/H2Gen.jl.git"}
+Hydrodynamics = {rev = "main", url = "https://github.com/JuliaOceanWaves/Hydrodynamics.jl.git"}
+Mooring = {rev = "main", url = "https://github.com/CMOE-TUDelft/Mooring.jl.git"}
+OptimizationParameters = {rev = "master", url = "https://github.com/byuflowlab/OptimizationParameters.jl.git"}
+PVlib = {rev = "main", url = "https://github.com/sandialabs/PVlib.jl.git"}
+PowerConverterDynamics = {rev = "master", url = "https://github.com/sandialabs/PowerConverterDynamics.jl.git"}
 SIRENOpt = {path = ".."}
-UnsteadyKineticRotorDynamics = {url = "git@cee-gitlab.sandia.gov:siren/UnsteadyKineticRotorDynamics.jl.git", rev = "master"}
-WaveSpectra = {url = "https://github.com/JuliaOceanWaves/WaveSpectra.jl.git", rev = "main"}
+UnsteadyKineticRotorDynamics = {rev = "master", url = "https://github.com/sandialabs/UnsteadyKineticRotorDynamics.jl.git"}
+WaveSpectra = {rev = "main", url = "https://github.com/JuliaOceanWaves/WaveSpectra.jl.git"}
 
 [compat]
 Documenter = "1"
@@ -31,7 +30,6 @@ SIRENOpt = "0.1"
 
 [extras]
 AgnosticStorageDynamics = "32e03c9e-1ca1-4f94-998d-0c16334532c1"
-BuoyData = "31efde5a-9a5e-4933-8696-7df4d2d7b37b"
 Desal = "c10c95ac-9782-4ee4-9116-e2afe774bfc7"
 DieselGen = "bc32595d-1e16-433f-a342-06d36c30239a"
 DimensionfulAngles = "2d4b8d7a-02d9-40f9-9abe-9c695b77de0d"

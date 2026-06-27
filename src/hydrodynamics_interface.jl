@@ -23,6 +23,24 @@ function hydrodynamic_platform_model(; stiffness_n_per_m = 0.0,
     )
 end
 
+function _hydrodynamics_zero_force(_time, state, _input; p = nothing)
+    n_dof = length(state) ÷ 2
+    return zeros(eltype(state), n_dof)
+end
+
+function _hydrodynamics_linear_force(_time, state, _input; p)
+    n_dof = length(state) ÷ 2
+    position = @view state[1:n_dof]
+    velocity = @view state[(n_dof + 1):end]
+    force = zeros(eltype(state), n_dof)
+    for coefficients in p
+        coefficients === nothing && continue
+        reference_position, stiffness, damping = coefficients
+        force .+= -damping * velocity .- stiffness * (position .- reference_position)
+    end
+    return force
+end
+
 function _hydrodynamic_parameter_tuple(model::HydrodynamicPlatformModel, scalar_type::Type)
     k = reshape([convert(scalar_type, model.stiffness_n_per_m)], 1, 1)
     b = reshape([convert(scalar_type, model.damping_n_s_per_m)], 1, 1)
@@ -30,10 +48,9 @@ function _hydrodynamic_parameter_tuple(model::HydrodynamicPlatformModel, scalar_
     excitation = convert.(scalar_type, model.excitation_coeff)
     force = convert.(scalar_type, model.constant_forces_n)
     wave = _hydro6_wave_as(scalar_type, model.wave)
-    pto = ([zero(scalar_type)], reshape([zero(scalar_type)], 1, 1), reshape([zero(scalar_type)], 1, 1))
-    mooring = pto
     hydro = (k, b, excitation, force, wave)
-    return (inverse_mass, hydro, pto, mooring)
+    force_other = (_hydrodynamics_zero_force, nothing, nothing)
+    return (inverse_mass, hydro, force_other, force_other)
 end
 
 function hydrodynamic_platform_acceleration(model::HydrodynamicPlatformModel,
